@@ -1,0 +1,12 @@
+mixin Number(num, text)
+    .number 
+        p.count= num 
+        p.object= text
+
+section.statistics
+    .container 
+        p За <span>6 лет </span>сделали ремонт окон в:
+        +Number(2880, "Квартирах")
+        +Number(150, "Домах")
+        +Number(32, "Школах")
+        +Number(48, "Офисах")

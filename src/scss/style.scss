@@ -3,6 +3,7 @@ body
     margin: 0;
     color: #000;
     background: #fff;
+    font-family: OpenSans;
 }
 
 body.lock
@@ -30,6 +31,301 @@ button, input, select
 button, a
 {
     cursor: pointer;
+}
+
+.btn-contact-us{
+    background: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: OpenSans;
+    border: 1px solid #ac8e74;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn{
+    text-transform: uppercase;
+    background-color: #ac8e74;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 50px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+header{
+    background-color: rgba($color: #2d2825, $alpha: 0.8);
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        display: flex;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .work-schedule{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        span{
+            display: block;
+            margin: 0;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+
+        .time{
+            font-weight: bold;
+        }
+    }
+
+    .work-schedule::before{
+        content: '';
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/time-icon.png);
+        position: absolute;
+        top: 15px;
+        background-size: cover;
+    }
+
+    .phone{
+        position: relative;
+        padding-left: 30px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .phone::before{
+        content: '';
+        width: 11px;
+        height: 20px;
+        background-image: url(../images/phone-icon.png);
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 3px;
+    }
+}
+
+.nav{
+    background-color: rgba($color: #362f2c, $alpha: 0.6);
+    position: fixed;
+    width: 100%;
+    top: 96px;
+    z-index: 10;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding: 10px 0;
+        margin: 0;
+        
+        li{
+            display: inline;
+        }
+    }
+}
+
+.maintenance-and-repair{
+    position: relative;
+    padding-top: 200px;
+
+    .carousel-maintenance{
+        z-index: -100;
+        position: absolute;
+        top: 0;
+
+        .owl-stage-outer{
+            height: 840px;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .descr{
+        width: 35%;
+        color: white;
+
+        h1{
+            font-family: Intro;
+            text-transform: uppercase;
+            font-size: 47px;
+            margin: 0;
+        }
+
+        p{
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .controls{
+            margin-top: 20px;
+            display: flex;
+
+            .btn-carousel-maintenance{
+                background: none;
+                border: none;
+                background-image: url(../images/CarouselMaintenanceControl.png);
+                background-size: cover;
+                width: 50px;
+                height: 50px;
+            }
+
+            .btn-prev{
+                transform: rotate(180deg);
+            }
+
+            .owl-dots-custom{
+                display: flex;
+                padding: 0 15px;
+                align-items: center;
+
+                li{
+                    display: inline-block;
+                    cursor: pointer;
+                    margin: 0 5px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #dddcdc;
+                    border-radius: 25px;
+                    transition: 0.5s;
+                }
+
+                li.active{
+                    background-color: #ac8e74;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}
+
+.statistics{
+    background-color: #2d2825;
+    margin-top: 250px;
+    padding: 20px 0;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            color: white;
+            font-family: Intro;
+            font-weight: bold;
+            font-size: 28px;
+
+            span{
+                color: #ac8e74;
+            }
+        }
+
+        .number{
+            display: flex;
+            flex-direction: column;
+
+            p{
+                margin: 0;
+            }
+
+            .count{
+                color: #ac8e74;
+            }
+        }
+    }
+}
+
+.services{
+    background-color: #3a3330;
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .card-services{
+            position: relative;
+            margin-top: 30px;
+
+            img{
+                top: 0;
+                width: 100%;
+            }
+
+            h2{
+                position: absolute;
+                top: 50px;
+                margin: 0;
+                left: 50px;
+                font-size: 34px;
+                color: #3a3330;
+                font-family: Intro;
+
+            }
+
+            .btn{
+                margin: 0;
+                position: absolute;
+                bottom: 50px;
+                left: 50px;
+            }
+        }
+
+        .nds{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .light{
+                font-weight: normal;
+                font-family: OpenSans;
+                font-size: 32px;
+                top: 20px;
+            }
+
+            p{
+                position: absolute;
+                font-size: 33px;
+                font-weight: bold;
+                color: #3a3330;
+                top: 100px;
+            }
+
+            h2{
+                left: auto;
+                font-size: 43px;
+                top: 90px;
+            }
+
+            .btn{
+                left: auto;
+            }
+        }
+    }
 }
 
 

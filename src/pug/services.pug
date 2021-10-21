@@ -1,0 +1,30 @@
+mixin Card(title, imgPath, link, extensionClass)
+    .card-services(class= extensionClass)
+        img(src= imgPath, alt="")
+        h2= title 
+        a(href= link).btn Подробнее
+
+
+section.services 
+    .container
+        +Card("Регулировка окон", "../assets/images/WindowAdjustment.png", "#", "window-adjustment")
+        +Card("Разблокировка", "../assets/images/Unlock.png", "#", "unlock")
+        +Card("Замена уплотнителя", "../assets/images/ReplacementOfTheSeal.png", "#", "replacement")
+        +Card("Остекление балконов", "../assets/images/GlazingOfBalconies.png", "#", "glazing")
+        .card-services.nds
+            img(src= "../assets/images/NDS.png", alt="")
+            p.light С нами комфортно
+            h2 ВОЗВРАЩАЕМ НДС
+            p со всей суммы ремонта 
+            a(href= "#").btn Обратитесь к нам
+        +Card("Ремонт фурнитуры", "../assets/images/HardwareRepair.png", "#", "repair")
+        +Card("Установка откосов", "../assets/images/InstallationOfSlopes.png", "#", "installation")
+        +Card("Установка ручек", "../assets/images/InstallingHandless.png", "#", "installing-handles")
+        +Card("Установка стекол", "../assets/images/GlassInstallation.png", "#", "glass-installation")
+        +Card("Замена стеклопакета", "../assets/images/GlassReplacement.png", "#", "glass-replacement")
+        +Card("Установка замков", "../assets/images/InstallingLocks.png", "#", "locks")
+
+        +Card("Ремонт профиля", "../assets/images/ProfileRepair.png", "#", "profile")
+        +Card("Установка отливов", "../assets/images/SettingTheTides.png", "#", "tides")
+        
+        

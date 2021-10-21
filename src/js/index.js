@@ -4,6 +4,32 @@ function Core()
 {
     SetTabSwitcher();
     SetModal();
+    InitOwlCarousel();
+}
+
+function InitOwlCarousel()
+{
+    var carousel_maintenance = $(".carousel-maintenance").owlCarousel(
+        {
+            items: 1,
+            loop: true,
+            dots: true,
+            autoplay: true,
+            smartSpeed: 1000,
+            dotsContainer: '.owl-dots-custom'
+        }
+    );
+
+    $('.btn-next.btn-carousel-maintenance').click(function() {
+        carousel_maintenance.trigger('next.owl.carousel');
+    });
+    $('.btn-prev.btn-carousel-maintenance').click(function() {
+        carousel_maintenance.trigger('prev.owl.carousel', [1000]);
+    });
+
+    $('.controls').on('click', 'li', function(e) {
+        carousel_maintenance.trigger('to.owl.carousel', [$(this).index(), 300]);
+      });
 }
 
 function SetTabSwitcher()

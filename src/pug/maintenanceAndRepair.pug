@@ -1,0 +1,24 @@
+include mixins.pug
+section.maintenance-and-repair
+    .owl-carousel.carousel-maintenance
+        .carousel-item(id="slide1")
+            img(src= "../assets/images/CarouselMaintenanceItem1.png", alt="")
+        .carousel-item(id="slide2")
+            img(src= "../assets/images/CarouselMaintenanceItem2.png", alt="")
+        .carousel-item(id="slide3")
+            img(src= "../assets/images/CarouselMaintenanceItem3.png", alt="")
+        //+MaintenanceCarouselItem("../assets/images/CarouselMaintenanceItem1.png")
+        //+MaintenanceCarouselItem("../assets/images/CarouselMaintenanceItem2.png")
+        //+MaintenanceCarouselItem("../assets/images/CarouselMaintenanceItem3.png")
+    .container
+        .descr
+            h1 обслуживание и ремонт окон в москве
+            p Ремонт окон, подоконников, откосов, уплотнителей, регулировка фурнитуры
+            button.btn подробнее
+            .controls 
+                button.btn-prev.btn-carousel-maintenance
+                ul.owl-dots-custom
+                    li.slide1.active(data="0")
+                    li.slide2(data="1")
+                    li.slide3(data="2")
+                button.btn-next.btn-carousel-maintenance

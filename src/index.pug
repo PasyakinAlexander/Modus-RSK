@@ -6,14 +6,13 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title MODUS RSK
         include pug/head.pug
     body
-        .container
-            h1 Hi from PUG! 
-            +InputRadio('name', 'test')
-            
-            +Modal('test', 'ModalTemplate')
-            button(modal="test") Modal Test
+        include pug/header.pug
+        include pug/nav.pug
+        include pug/maintenanceAndRepair.pug
+        include pug/statistics.pug
+        include pug/services.pug
 
         include pug/scripts.pug
