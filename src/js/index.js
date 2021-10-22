@@ -20,6 +20,17 @@ function InitOwlCarousel()
         }
     );
 
+    var carousel_recommendations = $(".carousel-recommendations").owlCarousel(
+        {
+            items: 1,
+            loop: true,
+            dots: true,
+            autoplay: true,
+            smartSpeed: 1000,
+            dotsContainer: '.owl-dots-custom-recommendations'
+        }
+    );
+
     $('.btn-next.btn-carousel-maintenance').click(function() {
         carousel_maintenance.trigger('next.owl.carousel');
     });
@@ -29,7 +40,18 @@ function InitOwlCarousel()
 
     $('.controls').on('click', 'li', function(e) {
         carousel_maintenance.trigger('to.owl.carousel', [$(this).index(), 300]);
-      });
+    });
+
+    $('.btn-next.btn-carousel-recommendations').click(function() {
+        carousel_recommendations.trigger('next.owl.carousel');
+    });
+    $('.btn-prev.btn-carousel-recommendations').click(function() {
+        carousel_recommendations.trigger('prev.owl.carousel', [1000]);
+    });
+
+    $('.btns').on('click', 'li', function(e) {
+        carousel_recommendations.trigger('to.owl.carousel', [$(this).index(), 300]);
+    });
 }
 
 function SetTabSwitcher()
