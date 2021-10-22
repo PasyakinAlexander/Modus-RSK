@@ -37,7 +37,6 @@ button, a
     background: none;
     text-transform: uppercase;
     color: white;
-    font-family: OpenSans;
     border: 1px solid #ac8e74;
     border-radius: 25px;
     padding: 10px 20px;
@@ -302,7 +301,6 @@ header{
 
             .light{
                 font-weight: normal;
-                font-family: OpenSans;
                 font-size: 32px;
                 top: 20px;
             }
@@ -323,6 +321,62 @@ header{
 
             .btn{
                 left: auto;
+            }
+        }
+    }
+}
+
+.modus-rsk{
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        color: #3a3330;
+        padding-bottom: 50px;
+
+        .descr{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2{
+                font-family: Intro;
+                width: 35%;
+                font-size: 47px;
+            }
+
+            p{
+                width: 65%;
+                font-size: 18px;
+            }
+        }
+
+        .cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .card-modus-rsk{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 55%;
+                margin-top: 100px;
+
+                h3{
+                    font-family: Intro;
+                    font-size: 43px;
+                    font-weight: bold;
+                    margin: 0;
+                    margin-top: 20px;
+                }
+
+                p{
+                    font-size: 24px;
+                    margin: 0;
+                    text-align: center;
+                }
             }
         }
     }
