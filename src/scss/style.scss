@@ -31,6 +31,7 @@ button, input, select
 button, a
 {
     cursor: pointer;
+    font-family: OpenSans;
 }
 
 .btn-contact-us{
@@ -57,7 +58,7 @@ button, a
 }
 
 header{
-    background-color: rgba($color: #2d2825, $alpha: 0.8);
+    background-color: #2d2825;
     color: white;
     padding: 20px 0;
     position: fixed;
@@ -69,6 +70,7 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .logo{
@@ -132,6 +134,10 @@ header{
     top: 96px;
     z-index: 10;
 
+    .btnCloseMenu{
+        display: none;
+    }
+
     ul{
         display: flex;
         justify-content: space-between;
@@ -164,13 +170,13 @@ header{
     }
 
     .descr{
-        width: 35%;
+        width: 40%;
         color: white;
 
         h1{
             font-family: Intro;
             text-transform: uppercase;
-            font-size: 47px;
+            font-size: 52px;
             margin: 0;
         }
 
@@ -180,7 +186,7 @@ header{
         }
 
         .controls{
-            margin-top: 20px;
+            margin-top: 100px;
             display: flex;
 
             .btn-carousel-maintenance{
@@ -188,8 +194,8 @@ header{
                 border: none;
                 background-image: url(../images/CarouselMaintenanceControl.png);
                 background-size: cover;
-                width: 50px;
-                height: 50px;
+                width: 60px;
+                height: 60px;
             }
 
             .btn-prev{
@@ -224,13 +230,14 @@ header{
 
 .statistics{
     background-color: #2d2825;
-    margin-top: 250px;
+    margin-top: 170px;
     padding: 20px 0;
 
     .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
 
         p{
             color: white;
@@ -253,6 +260,8 @@ header{
 
             .count{
                 color: #ac8e74;
+                font-size: 37px;
+                font-weight: 700;
             }
         }
     }
@@ -265,10 +274,11 @@ header{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-bottom: 100px;
 
         .card-services{
             position: relative;
-            margin-top: 30px;
+            margin-top: 50px;
 
             img{
                 top: 0;
@@ -292,6 +302,42 @@ header{
                 bottom: 50px;
                 left: 50px;
             }
+        }
+
+        .unlock{
+            width: 55%;
+        }
+
+        .replacement{
+            width: 40%;
+        }
+
+        .repair{
+            width: 55%;
+        }
+
+        .installation{
+            width: 40%;
+        }
+
+        .glass-installation{
+            width: 40%;
+        }
+
+        .glass-replacement{
+            width: 55%;
+        }
+
+        .locks{
+            width: 30%;
+        }
+
+        .profile{
+            width: 30%;
+        }
+
+        .tides{
+            width: 30%;
         }
 
         .nds{
@@ -333,7 +379,7 @@ header{
         align-items: center;
         padding-top: 50px;
         color: #3a3330;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
 
         .descr{
             display: flex;
@@ -392,6 +438,7 @@ header{
         align-items: center;
         justify-content: space-between;
         padding-bottom: 100px;
+        padding-top: 50px;
 
         .descr{
             width: 50%;
@@ -479,6 +526,7 @@ header{
         align-items: center;
         color: #3a3330;
         padding-top: 100px;
+        padding-bottom: 100px;
 
         h2{
             font-family: Intro;
@@ -499,7 +547,6 @@ header{
 
             .revs{
                 width: 50%;
-                background-color: #2d2825;
             }
 
             .videos{
@@ -524,6 +571,8 @@ header{
     color: white;
 
     .container{
+        padding-top: 50px;
+
         h2{
             font-family: Intro;
             font-size: 47px;
@@ -546,10 +595,15 @@ header{
 
                 p{
                     font-size: 18px;
+                    margin-bottom: 50px;
                 }
 
                 img{
                     width: 100%;
+                }
+
+                .btn{
+                    margin-top: 50px;
                 }
             }
 
@@ -562,13 +616,13 @@ header{
             .left{
                 display: flex;
                 flex-direction: column;
-                width: 45%;
+                width: 48%;
             }
 
             .right{
                 display: flex;
                 flex-direction: column;
-                width: 45%;
+                width: 48%;
             }
         }
     }
@@ -586,16 +640,15 @@ header{
 
         .director-card{
             background-image: url(../images/Director.png);
-            margin-top: 93px;
-            width: 800px;
-            height: 500px;
+            margin-top: 65px;
+            width: 35%;
+            height: 600px;
             position: relative;
             display: flex;
             align-items: center;
             background-size: cover;
             background-position: center;
             border-radius: 15px;
-            margin-top: 155px;
             flex-direction: column;
             justify-content: flex-end;
             padding-bottom: 5px;
@@ -606,16 +659,19 @@ header{
             }
 
             .name{
-                font-size: 20px;
+                font-size: 24px;
+                font-weight: bold;
             }
 
             .post{
-                font-size: 18px;
+                font-size: 20px;
+                font-weight: bold;
             }
         }
 
         .descr{
             padding-left: 50px;
+            width: 65%;
 
             h2{
                 font-family: Intro;
@@ -706,6 +762,7 @@ header{
         font-size: 47px;
         margin: 0;
         text-align: center;
+        margin-bottom: 50px;
     }
 
     .separator{
@@ -717,6 +774,7 @@ header{
     .card-information{
         display: flex;
         margin-top: 25px;
+        justify-content: flex-end;
 
         img{
             width: 30%;
@@ -728,17 +786,20 @@ header{
 
             h3{
                 font-size: 18px;
-                font-weight: bold;
+                font-weight: 400;
             }
 
             p{
                 font-size: 18px;
-                font-weight: normal;
+                font-weight: 100;
+                color: #9d9390;
             }
 
             .date{
-                font-weight: bold;
-                margin-top: 50px;
+                font-weight: 400;
+                margin-top: 70px;
+                color: white;
+                margin-bottom: 0;
             }
         }
     }
@@ -768,7 +829,7 @@ footer{
                 font-size: 18px;
                 display: flex;
                 align-items: center;
-                margin-top: 20px;
+                margin-top: 30px;
             }
 
             .phone::before{
@@ -784,7 +845,9 @@ footer{
                 font-size: 18px;
                 display: flex;
                 align-items: flex-end;
-                margin-top: 20px;
+                margin-top: 30px;
+                color: #a4e2fb;
+                text-decoration: underline;
             }
 
             .mail::before{
@@ -805,7 +868,7 @@ footer{
 
                 li{
                     list-style: none;
-                    padding: 10px;
+                    padding: 5px;
                     font-size: 14px;
                 }
             }
@@ -821,6 +884,7 @@ footer{
                 flex-direction: column;
                 position: relative;
                 padding-left: 30px;
+                font-size: 14px;
 
                 .time-text{
                     font-weight: bold;
@@ -895,6 +959,7 @@ footer{
 
             .policy{
                 font-size: 13px;
+                font-weight: bold;
             }
         }
     }

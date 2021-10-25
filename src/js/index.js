@@ -5,6 +5,8 @@ function Core()
     SetTabSwitcher();
     SetModal();
     InitOwlCarousel();
+    ShowMenu();
+    CloseMenu();
 }
 
 function InitOwlCarousel()
@@ -52,6 +54,25 @@ function InitOwlCarousel()
     $('.btns').on('click', 'li', function(e) {
         carousel_recommendations.trigger('to.owl.carousel', [$(this).index(), 300]);
     });
+}
+
+function ShowMenu()
+{
+    $('.btn__menu').click(function(){
+        if ($(".nav").hasClass('showMenu')){
+            $(".nav").removeClass('showMenu');
+        }
+        else{
+            $(".nav").addClass('showMenu');
+        }
+    })
+}
+
+function CloseMenu()
+{
+    $('.btnCloseMenu').click(function(){
+        $(".nav").removeClass('showMenu');
+    })
 }
 
 function SetTabSwitcher()
