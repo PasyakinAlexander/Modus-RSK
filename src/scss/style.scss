@@ -230,7 +230,7 @@ header{
 
 .statistics{
     background-color: #2d2825;
-    margin-top: 170px;
+    margin-top: 150px;
     padding: 20px 0;
 
     .container{
@@ -278,11 +278,10 @@ header{
 
         .card-services{
             position: relative;
-            margin-top: 50px;
+            margin-top: 25px;
 
             img{
                 top: 0;
-                width: 100%;
             }
 
             h2{
@@ -291,7 +290,7 @@ header{
                 margin: 0;
                 left: 50px;
                 font-size: 34px;
-                color: #3a3330;
+                color: #231f20;
                 font-family: Intro;
 
             }
@@ -310,6 +309,10 @@ header{
 
         .replacement{
             width: 40%;
+
+            h2{
+                width: 200px;
+            }
         }
 
         .repair{
@@ -328,16 +331,12 @@ header{
             width: 55%;
         }
 
-        .locks{
+        .locks, .profile, .tides{
             width: 30%;
-        }
 
-        .profile{
-            width: 30%;
-        }
-
-        .tides{
-            width: 30%;
+            h2{
+                width: 200px;
+            }
         }
 
         .nds{
@@ -354,15 +353,16 @@ header{
             p{
                 position: absolute;
                 font-size: 33px;
-                font-weight: bold;
-                color: #3a3330;
-                top: 100px;
+                font-weight: 800;
+                color: #231f20;
+                top: 110px;
             }
 
             h2{
                 left: auto;
                 font-size: 43px;
-                top: 90px;
+                top: 95px;
+                font-weight: 800;
             }
 
             .btn{
@@ -378,7 +378,7 @@ header{
         flex-direction: column;
         align-items: center;
         padding-top: 50px;
-        color: #3a3330;
+        color: #231f20;
         padding-bottom: 100px;
 
         .descr{
@@ -413,7 +413,7 @@ header{
                 h3{
                     font-family: Intro;
                     font-size: 43px;
-                    font-weight: bold;
+                    font-weight: 800;
                     margin: 0;
                     margin-top: 20px;
                 }
@@ -422,6 +422,8 @@ header{
                     font-size: 24px;
                     margin: 0;
                     text-align: center;
+                    margin-top: 10px;
+                    font-weight: 500;
                 }
             }
         }
@@ -524,7 +526,7 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: #3a3330;
+        color: #231f20;
         padding-top: 100px;
         padding-bottom: 100px;
 
@@ -532,11 +534,13 @@ header{
             font-family: Intro;
             font-size: 47px;
             margin: 0;
+            font-weight: 800;
         }
 
         h3{
             font-size: 24px;
             margin: 0;
+            font-weight: 400;
         }
 
         .content{
@@ -571,12 +575,13 @@ header{
     color: white;
 
     .container{
-        padding-top: 50px;
+        padding-top: 80px;
 
         h2{
             font-family: Intro;
             font-size: 47px;
             text-align: center;
+            margin-bottom: 80px;
         }
 
         .cards{
@@ -589,13 +594,15 @@ header{
 
                 h3{
                     font-family: Intro;
-                    font-size: 37px;
+                    font-size: 36px;
                     margin-bottom: 0;
+                    margin-top: 20px;
                 }
 
                 p{
                     font-size: 18px;
                     margin-bottom: 50px;
+                    font-weight: 300;
                 }
 
                 img{
@@ -677,13 +684,13 @@ header{
                 font-family: Intro;
                 margin: 0;
                 font-size: 36px;
-                font-weight: bold;
+                font-weight: 800;
             }
 
             h3{
                 font-family: Intro;
                 margin: 0;
-                font-size: 28px;
+                font-size: 24px;
                 font-weight: bold;
             }
 
@@ -707,7 +714,7 @@ header{
                 align-items: center;
 
                 p{
-                    font-size: 18px;
+                    font-size: 16px;
                 }
 
                 a{
@@ -768,12 +775,12 @@ header{
     .separator{
         width: 90%;
         border-bottom: 1px solid #574f4b;
-        padding-top: 25px;
+        padding-top: 35px;
     }
 
     .card-information{
         display: flex;
-        margin-top: 25px;
+        margin-top: 35px;
         justify-content: flex-end;
 
         img{
@@ -800,6 +807,7 @@ header{
                 margin-top: 70px;
                 color: white;
                 margin-bottom: 0;
+                font-size: 15px;
             }
         }
     }
