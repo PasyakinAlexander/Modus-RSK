@@ -1,0 +1,121 @@
+include pug/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title MODUS RSK
+        include pug/head.pug
+    body
+        include pug/header.pug
+        include pug/nav.pug
+        
+        section.adjustment-title 
+            .container
+                .title 
+                    h1 регулировка окон
+                    p Осуществляем регулировку окон и занимаемся их ремонтом. Мастера настраивают основные механизмы и устраняют причины поломки.
+                    .btn рассчитать стоимость
+            include pug/statistics.pug
+        
+        section.seo-text
+            .container 
+                p Регулировка фурнитуры окон необходима, если вы чувствуете сквозняк или видите, что створка задевает раму при открывании, ручка разболталась или с трудом поворачивается. 
+                p После того как специалист выяснит причину поломки, он настроит прижимной механизм и отрегулирует створки, разблокирует или заменит сломанную ручку. В работе мастер использует комплектующие более чем 13 производителей, среди них KBE, REHAU, THYSSEN, VEKA, PROPLEX, TROCAL, Salamander, Roto, AUBI, MACO, Siegenia, WINKHAUS, SCHUCO и т. д.
+        section.work-us
+            .container 
+                h2 Почему нужно работать с нами?
+                .blocks 
+                    .block 
+                        img(src="../assets/images/icons/SolarCarIcon.png", alt="")
+                        p Мастер приедет на специально - оборудованном автомобиле, где есть весь необходимый инструмент и запасные части. Ремонт не перенесется на другой день и не затянется.
+                    .block 
+                        img(src="../assets/images/icons/WindowIcon.png", alt="")
+                        p Мастер произведет ремонт по ГОСТУ и требованиям производителей оконных комплектующих. По завершению работы, мастер оформит договор. С нами вы сможете забыть о некачественном ремонте.
+                    .block 
+                        img(src="../assets/images/icons/ChatIcon.png", alt="")
+                        p На следующий день после ремонта, мы пришлем SMS, в котором предложим оставить отзыв. Все отзывы модерируются директором компании напрямую. Ваш отзыв не останется незамеченным.
+        section.master 
+            .container 
+                img(src="../assets/images/Man.png", alt="")
+                .form 
+                    h4 мастер приедет
+                    h3 уже сегодня
+                    p Или в любое другой назначенный Вами день
+                    .inputs 
+                        p Укажите Ваш номер телефона, чтобы назначить дату мастеру
+                        input(type="text", placeholder="Ваше имя").name
+                        input(type="phone", placeholder="+7(___)___-__-__")
+                        .btn отправить
+                    span Нажимая кнопку, вы соглашаетесь с 
+                        a(href="") политикой конфиденциальности
+        section.when-to-adjust 
+            .container 
+                h2 Когда нужно регулировать окна
+                .points 
+                    .point 
+                        img(src="../assets/images/icons/ExclamationMarkIcon.png", alt="")
+                        p Ослабла ручка
+                    .point 
+                        img(src="../assets/images/icons/ExclamationMarkIcon.png", alt="")
+                        p Низ или средняя часть створки задевает раму
+                    .point 
+                        img(src="../assets/images/icons/ExclamationMarkIcon.png", alt="")
+                        p Окно плохо закрывается
+                    .point 
+                        img(src="../assets/images/icons/ExclamationMarkIcon.png", alt="")
+                        p Из закрытого притвора дует
+        section.price 
+            .container 
+                h2 Стоимость регулировки окон и оконной фурнитуры
+                table 
+                    tr 
+                        td Регулировка фурнитуры+чистка, смазка фурнитуры (без замены комплектующих)	
+                        td 500 ₽
+                    tr 
+                        td Установка гребенки (ограничитель открывания створки), белые/коричневые
+                        td 300 ₽
+                    tr 
+                        td Ручка-скоба
+                        td 3000 ₽
+                    tr 
+                        td Ручка с ключом
+                        td 1800 ₽
+                    tr 
+                        td Ручка-зацеп на балконную дверь (пластиковая)
+                        td 200 ₽
+                    tr 
+                        td Ручка-зацеп на балконную дверь (металлическая)
+                        td 300 ₽
+                    tr 
+                        td Детский замок, блокировка "защита от детей" (белый)
+                        td 1500 ₽
+                    tr 
+                        td Детский замок, блокировка "защита от детей" (окраска по шкале RAL)
+                        td от 1500 ₽ +30%
+                    tr 
+                        td Замена поворотной фурнитуры (комплект)
+                        td от 3500 ₽
+                    tr 
+                        td Замена фурнитуры на поворотно-откидную
+                        td от 4500 ₽ до 6000 ₽
+                    tr 
+                        td Установка доводчика для входной двери
+                        td 3500 ₽
+                    tr 
+                        td Замена оконной ручки (белая/коричневая)
+                        td 500 ₽
+                    tr 
+                        td Замена оконной ручки (другие цвета по шкале RAL)
+                        td 800 ₽
+                .btn обратиться к нам
+        include pug/recommendations.pug
+        include pug/reviews.pug
+        include pug/modusRSK.pug
+        include pug/director.pug
+        include pug/information.pug
+        include pug/footer.pug
+
+        include pug/scripts.pug

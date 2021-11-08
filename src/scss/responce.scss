@@ -68,6 +68,56 @@
             }
         }
     }
+
+    .contacts-section{
+        .blocks{
+            .phone-map-block{
+                .phone-block{
+                    .connect{
+                        flex-direction: column;
+    
+                        .social{
+                            margin-top: 20px;
+                            width: 100%;
+                            justify-content: center;
+    
+                            img{
+                                margin-left: 10px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .master{
+        img{
+            width: 50%;
+        }
+
+        .form{
+            span{
+                width: 120%;
+                margin-top: 100px;
+            }
+        }
+    }
+
+    .when-to-adjust{
+        .points{
+            .point::after{
+                width: 170px;
+            }
+        }
+    }
+
+    .price{
+        h2{
+            padding: 0;
+        }
+    }
 }
 
 @media(max-width: 1024px)
@@ -112,6 +162,20 @@
             }
         }
     }
+
+    .adjustment-title{
+        .title{
+            width: 60%;
+        }
+    }
+
+    .when-to-adjust{
+        .points{
+            .point::after{
+                width: 150px;
+            }
+        }
+    }
 }
 
 @media(max-width: 992px)
@@ -123,21 +187,14 @@
 
     header{
         .container{
-            justify-content: center;
-
-            
+            justify-content: space-between;            
 
             .work-schedule{
-                margin-left: 70px;
+                display: none;
             }
 
             .phone{
-                width: 50%;
-                margin-top: 20px;
-            }
-
-            .btn-contact-us{
-                margin-top: 20px;
+                width: 30%;
             }
         }
 
@@ -147,7 +204,7 @@
             width: 50px;
             margin-right: auto;
             position: absolute;
-            top: 10px;
+            top: 20px;
             left: 10px;
         }
     
@@ -155,7 +212,7 @@
         {
             height: 3px;
             position: absolute;
-            background: #000;
+            background:  wheat;
             left: 50%;
         }
     
@@ -181,10 +238,11 @@
 
     .nav{
         top: 0;
-        left: -300px;
-        width: 300px;
+        left: -350px;
+        width: 350px;
         background-color: rgba($color: #362f2c, $alpha: 0.9);
         transition: 0.5s;
+        padding-bottom: 50px;
 
         .btnCloseMenu{
             display: block;
@@ -217,6 +275,11 @@
                 padding: 10px;
             }
         }
+
+        .work-schedule{
+            display: block;
+            margin-top: 50px;
+        }
     }
 
     .showMenu{
@@ -227,7 +290,7 @@
         padding-top: 170px;
 
         .carousel-maintenance{
-            top: 100px;
+            top: 90px;
         }
     }
 
@@ -317,6 +380,7 @@
 
                 .descr{
                     width: 100%;
+                    padding: 0;
                 }
             }
         }
@@ -341,6 +405,74 @@
             }
         }
     }
+
+    .head-about-the-company{
+        .title{
+            h1{
+                font-size: 64px;
+            }
+        }
+    }
+
+    .works{
+    
+        .photo{
+    
+            .photo-work-card {
+                width: 45%;
+            }
+        }
+    
+        .videos{
+            .video{
+                width: 50%;
+            }
+        }
+    }
+
+    .adjustment-title{
+        height: 500px;
+
+        .title{
+            width: 80%;
+        }
+    }
+
+    .seo-text{
+        margin-top: 210px;
+    }
+
+    .master{
+
+        img{
+            width: 35%;
+            height: 100%;
+            margin-top: auto;
+        }
+
+        .form{
+            width: 65%;
+
+            span{
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .when-to-adjust{
+        .points{
+            .point::after{
+                width: 60px;
+            }
+        }
+    }
+
+    .vacancies{
+        .btn__tab__switch{
+            width: 100%;
+        }
+    }
 }
 
 @media(max-width: 768px)
@@ -351,17 +483,21 @@
     }
 
     header{
-        .work-schedule{
-            width: 50%;
+        .logo{
+            width: 50px;
+            overflow: hidden;
+            display: block;
+        }
+
+        .container{
+            .phone{
+                width: 180px;
+            }
         }
     }
 
     .maintenance-and-repair{
-        padding-top: 200px;
-
-        .carousel-maintenance{
-            top: 180px;
-        }
+        padding-top: 130px;
         
         .descr{
             width: 100%;
@@ -528,13 +664,147 @@
             }
         }
     }
+
+    .head-about-the-company{ 
+        padding-top: 100px;
+
+        .container{
+            height: 300px;
+        }
+
+        .title{ 
+            h1{
+                font-size: 54px;
+            }
+            img{
+                width: 60%;
+            }
+        }
+    }
+
+    .advantages{
+        .kp{
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .kp-block{
+                width: 35%;
+            }
+        }
+    }
+
+    .contacts-section{
+        .blocks{
+            flex-direction: column;
+
+            .phone-map-block{
+                width: 100%;
+
+                .phone-block{
+                    border-radius: 10px 10px 0 0;
+                }
+
+                .map-block{
+                    border-radius: 0;
+                    height: 280px;
+
+                    img{
+                        border-radius: 0;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .info-block{
+                width: 100%;
+                border-radius: 0 0 10px 10px;
+            }
+        }
+    }
+
+    .empty-block{
+        display: none;
+    }
+
+    .works{
+        .videos{
+            .video{
+                width: 100%;
+            }
+        }
+    }
+
+    .adjustment-title{
+        height: 400px;
+
+        .title{
+            width: 100%;
+        }
+    }
+
+    .seo-text{
+        p{
+            padding: 0;
+        }
+    }
+
+    .work-us{
+        .blocks{
+            flex-direction: column;
+
+            .block{
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+
+                p{
+                    padding-left: 50px;
+                }
+            }
+        }
+    }
+
+    .master{
+        img{
+            display: none;
+        }
+
+        .form{
+            width: 100%;
+        }
+    }
+
+    .when-to-adjust{
+        .points{
+            flex-direction: column;
+
+            .point{
+                flex-direction: row;
+                width: 100%;
+                padding-bottom: 20px;
+
+                p{
+                    padding-left: 20px;
+                }
+            }
+
+            .point::after{
+                content: none;
+            }
+        }
+    }
+
+    .vacancies{
+        padding-top: 100px;
+    }
 }
 
 @media(max-width: 576px)
 {
     .container
     {
-        max-width: 320px;
+        max-width: 100%;
+        height: 100%;
     }
 
     header{
@@ -542,19 +812,36 @@
 
         .container{
             align-items: center;
+
+            .phone{
+                width: 11px;
+                font-size: 0;
+                overflow: hidden;
+                height: 25px;
+                padding:0;
+            }
         }
 
-        .logo, .phone, .work-schedule{
-            width: 100%;
-            justify-content: center;
-            padding-bottom: 20px;
+        .logo{
+            margin-left: 50px;
+        }
+
+        .btn-contact-us{
+            width: 50%;
+            font-size: 10px;
         }
     }
 
     .nav{
         width: 100%;
         left: -100%;
-        height: 100%
+        height: 100%;
+
+        .work-schedule{
+            position: absolute;
+            bottom: 30px;
+            left: 50px;
+        }
     }
 
     .showMenu{
@@ -565,18 +852,31 @@
         padding-top: 0;
         
         .carousel-maintenance{
-            top: -5px;
+            top: 0;
+
+            .carousel-item{
+                height: 360px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+
+            img{
+                height: 360px;
+                width: auto;
+            }
         }
 
         .descr{
             padding-top: 20px;
 
             h1{
-                font-size: 32px;
+                font-size: 28px;
             }
 
             p{
                 color: #ac8e74;
+                font-size: 16px;
             }
         }
     }
@@ -610,6 +910,10 @@
                     text-align: center;
                     width: 100%;
                     padding: 10px;
+                }
+
+                .btn{
+                    left: 20%;
                 }
             }
 
@@ -705,7 +1009,7 @@
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
-                width: 100%;
+                width: 300px;
 
                 .name{
                     margin-bottom: -5px;
@@ -763,6 +1067,12 @@
             .nav-footer{
                 width: 100%;
                 margin-top: 20px;
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
 
             .time-social{
@@ -777,11 +1087,175 @@
             .connection-copyright{
                 width: 100%;
                 margin-top: 20px;
+                align-items: center;
+                flex-direction: column;
 
                 p{
                     width: 100%;
                 }
             }
         }
+    }
+
+    .head-about-the-company{
+        padding: 20px 0;
+        .container{
+            height: 100px;
+        }
+
+        .title{
+            h1{
+                font-size: 32px;
+            }
+
+            img{
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .mission{
+        .block{
+            width: 90%;
+
+            h2{
+                text-align: center;
+            }
+        }
+    }
+
+    .advantages{
+        .kp{
+            .kp-block{
+                width: 55%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .contacts-section{
+        padding-top: 20px;
+
+        .blocks{
+            .phone-map-block{
+                .phone-block{
+                    padding: 25px;
+
+                    a{
+                        font-size: 20px;
+                    }
+
+                    a:before{
+                        top: 5px;
+                    }
+                }
+
+                .map-block{
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    .title-works{
+        height: 300px;
+        padding: 0;
+
+        .statistics{
+            margin-top: 0;
+        }
+    }
+
+    .works{
+        padding-top: 550px;
+
+        .photo{
+            .photo-work-card{
+                width: 100%;
+            }
+        }
+
+        .videos{
+            .video{
+                height: 200px;
+            }
+        }
+    }
+
+    .adjustment-title{
+        padding-top: 0px;
+
+        h1{
+            font-size: 38px;
+        }
+
+        .title{
+            .btn{
+                width: max-content;
+            }
+        }
+    }
+
+    .seo-text{
+        padding: 10px 0;
+        margin-top: 550px;
+    }
+
+    .work-us{
+        h2{
+            font-size: 38px;
+        }
+
+        .blocks{
+            .block{
+                flex-direction: column;
+
+                p{
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .master{
+        .form{
+            padding: 0;
+
+            h3{
+                font-size: 32px;
+            }
+
+            h4{
+                font-size: 28px;
+            }
+
+            span{
+                width: 80%;
+            }
+        }
+    }
+
+    .when-to-adjust{
+        h2{
+            font-size: 38px;
+        }
+
+        .points{
+            .point{
+                p{
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .price{
+        h2{
+            font-size: 38px;
+        }
+    }
+
+    .vacancies{
+        padding-top: 20px;
     }
 }

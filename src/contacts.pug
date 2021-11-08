@@ -1,0 +1,53 @@
+include pug/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title MODUS RSK
+        include pug/head.pug
+    body
+        include pug/header.pug
+        include pug/nav.pug
+
+        section.contacts-section
+            .container 
+                h1 наши Контакты
+                .blocks 
+                    .phone-map-block
+                        .phone-block
+                            a(href="tel:84951911029") 8 (495) 191-10-29
+                            p Каждый день с 8:00 до 22:00
+                            .connect
+                                +BtnContactUs()
+                                .social 
+                                    img(src="../assets/images/icons/FacebookIcon2.png", alt="")
+                                    img(src="../assets/images/icons/InstagramIcon2.png", alt="")
+                                    img(src="../assets/images/icons/VkIcon2.png", alt="")
+                        .map-block 
+                            img(src="../assets/images/Map.png", alt="")
+                    .info-block 
+                        p.name ООО "РСК-МОДУС"
+                        .contacts-info
+                            p Телефон: 8 (495) 172-50-66
+                            p Эл. почта: info@rsk-modus.ru
+                            p Skype: rskmodus 
+                            p Адрес: Москва, улица Горбунова, 2с3 БЦ Гранд Сетунь Плаза (В 407, этаж 4)
+                        .time 
+                            p Прием и обработка заявок: с 8.00 - 22.00 без выходных
+                            p Работа офиса: с 10.00 - 18.00 по будням
+                        .mails 
+                            .corp 
+                                p.color Отдел по работе с корпоративными клиентами
+                                p Эл. почта: orkk@rsk-modus.ru
+                            .engineer 
+                                p.color Служба главного инженера
+                                p Эл. почта: engineer@rsk-modus.ru
+
+        include pug/director.pug
+        .empty-block
+        include pug/footer.pug
+
+        include pug/scripts.pug

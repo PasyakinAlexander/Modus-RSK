@@ -23,3 +23,11 @@ mixin BtnContactUs()
 mixin MaintenanceCarouselItem(imgPath)
     .carousel-item
         img(src= imgPath, alt="")
+
+mixin PhotoWorkCard(imgPath, title, descr)
+    .photo-work-card 
+        img(src= imgPath, alt="")
+        .descr
+            h3= title 
+            p= descr
+            button.more Подробнее

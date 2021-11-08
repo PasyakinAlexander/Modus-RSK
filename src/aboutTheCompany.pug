@@ -1,0 +1,51 @@
+include pug/mixins.pug
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title MODUS RSK
+        include pug/head.pug
+    body
+        include pug/header.pug
+        include pug/nav.pug
+        
+        section.head-about-the-company 
+            .container 
+                .title 
+                    h1 о нас
+                    img(src="../assets/images/logoBig.png", alt="")
+
+        include pug/modusRSK.pug
+
+        section.mission 
+            .container 
+                .block 
+                    h2 Миссия RSK Modus 
+                    p Обеспечиваем техническое превосходство Вашего дома, стремясь к совершенству и исключая посредственность
+
+        section.advantages 
+            .container 
+                h2 Преимущества работы с нами
+                .kp 
+                    .kp-block 
+                        img(src="../assets/images/icons/QualityIcon.png", alt="")
+                        p Мастера есть в каждом районе Москвы
+                    .kp-block 
+                        img(src="../assets/images/icons/FreeIcon.png", alt="")
+                        p Выезд и диагностика бесплатно!
+                    .kp-block 
+                        img(src="../assets/images/icons/TaxFreeIcon.png", alt="")
+                        p Работаем без предоплаты
+                    .kp-block 
+                        img(src="../assets/images/icons/DiscountIcon.png", alt="")
+                        p Юр.лицам возвращаем НДС
+
+        include pug/director.pug
+        include pug/recommendations.pug
+        include pug/reviews.pug
+        include pug/footer.pug
+
+        include pug/scripts.pug
