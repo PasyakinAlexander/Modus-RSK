@@ -12,8 +12,9 @@ html(lang="ru")
         include pug/header.pug
         include pug/nav.pug
         
-        section.adjustment-title 
+        section.adjustment-title(style="background-image: url(../assets/images/BackgroundAdjustment.jpg);")
             .container
+                +BreadCrumbs("Регулировка окон")
                 .title 
                     h1 регулировка окон
                     p Осуществляем регулировку окон и занимаемся их ремонтом. Мастера настраивают основные механизмы и устраняют причины поломки.

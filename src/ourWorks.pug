@@ -17,36 +17,38 @@ html(lang="ru")
         include pug/header.pug
         include pug/nav.pug
         
-        section.title-works 
+        section.title-works(style="background-image: url(../assets/images/BackgroundOurWorks.jpg);")
             .container
+                +BreadCrumbs("Наши работы")
                 h1 наши работы
             include pug/statistics.pug
 
         section.works 
             .container
-                .btns 
-                    button.active Фото
-                    button Видео
-                .photo.active-work
-                    +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
-                    +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
-                    +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
-                    +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
-                    +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
-                    +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
-                .videos
-                    .video
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    .video
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    .video
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    .video
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    .video
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    .video
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                .btns.btn__switch__wrapper
+                    button.btn__tab__switch(target="photo-works").active Фото
+                    button.btn__tab__switch(target="video-vorks") Видео
+                .tab__viewer
+                    .tab(tab-name="photo-works").active.photo
+                        +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
+                        +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
+                        +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
+                        +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
+                        +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
+                        +PhotoWorkCard("../assets/images/WorksPhoto.png", "Ремонт 10 окон в коттедже", "Заменили профиль, стеклопакет и фурнитуру")
+                    .tab(tab-name="video-vorks").videos
+                        .video
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        .video
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        .video
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        .video
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        .video
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        .video
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z1_X86D34Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         include pug/footer.pug
 

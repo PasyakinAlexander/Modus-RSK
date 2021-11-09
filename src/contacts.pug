@@ -14,6 +14,7 @@ html(lang="ru")
 
         section.contacts-section
             .container 
+                +BreadCrumbs("Контакты")
                 h1 наши Контакты
                 .blocks 
                     .phone-map-block
@@ -27,7 +28,7 @@ html(lang="ru")
                                     img(src="../assets/images/icons/InstagramIcon2.png", alt="")
                                     img(src="../assets/images/icons/VkIcon2.png", alt="")
                         .map-block 
-                            img(src="../assets/images/Map.png", alt="")
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac07d144a97948aa31134aad34d4e11594a5b34698db75e77a3285c4d276220c1&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
                     .info-block 
                         p.name ООО "РСК-МОДУС"
                         .contacts-info

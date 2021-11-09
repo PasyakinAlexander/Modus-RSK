@@ -30,4 +30,9 @@ mixin PhotoWorkCard(imgPath, title, descr)
         .descr
             h3= title 
             p= descr
-            button.more Подробнее
+            .btn Подробнее
+
+mixin BreadCrumbs(page)
+    .bread-crumbs 
+        p Главная - 
+            span= page

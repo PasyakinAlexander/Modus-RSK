@@ -11,7 +11,9 @@ html(lang="ru")
     body
         include pug/header.pug
         include pug/nav.pug 
-
+        section.iformation-bread-crumbs
+            .container
+                +BreadCrumbs("Полезная информация")
         include pug/information.pug
 
         include pug/footer.pug

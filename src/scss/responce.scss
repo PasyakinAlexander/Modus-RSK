@@ -118,6 +118,12 @@
             padding: 0;
         }
     }
+
+    .adjustment-title{
+        .title{
+            width: 60%;
+        }
+    }
 }
 
 @media(max-width: 1024px)
@@ -415,7 +421,8 @@
     }
 
     .works{
-    
+        padding-top: 220px;
+
         .photo{
     
             .photo-work-card {
@@ -797,6 +804,14 @@
     .vacancies{
         padding-top: 100px;
     }
+
+    .bread-crumbs{
+        margin-top: 0;
+
+        p{
+            margin: 0;
+        }
+    }
 }
 
 @media(max-width: 576px)
@@ -809,6 +824,7 @@
 
     header{
         position: inherit;
+        padding: 10px 0;
 
         .container{
             align-items: center;
@@ -824,11 +840,19 @@
 
         .logo{
             margin-left: 50px;
+
+            img{
+                height: 50px;
+            }
         }
 
         .btn-contact-us{
             width: 50%;
             font-size: 10px;
+        }
+
+        .btn__menu{
+            top: 10px;
         }
     }
 
@@ -938,6 +962,8 @@
 
                 .btn{
                     top: 150px;
+                    width: fit-content;
+                    left: auto;
                 }
             }
         }
@@ -954,6 +980,10 @@
             .cards{
                 .card-modus-rsk{
                     text-align: center;
+
+                    h3{
+                        font-size: 38px;
+                    }
                 }
             }
         }
@@ -1072,6 +1102,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    padding: 0;
                 }
             }
 
@@ -1098,12 +1129,14 @@
     }
 
     .head-about-the-company{
-        padding: 20px 0;
+        padding: 10px 0;
         .container{
-            height: 100px;
+            height: 150px;
         }
 
         .title{
+            margin-top:0;
+
             h1{
                 font-size: 32px;
             }
@@ -1116,7 +1149,8 @@
 
     .mission{
         .block{
-            width: 90%;
+            width: 100%;
+            padding: 0;
 
             h2{
                 text-align: center;
@@ -1167,7 +1201,7 @@
     }
 
     .works{
-        padding-top: 550px;
+        padding-top: 620px;
 
         .photo{
             .photo-work-card{
@@ -1223,14 +1257,40 @@
 
             h3{
                 font-size: 32px;
+                text-align: center;
             }
 
             h4{
                 font-size: 28px;
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
             }
 
             span{
-                width: 80%;
+                width: 100%;
+                text-align: center;
+
+                a{
+                    word-break: normal;
+                }
+            }
+
+            .inputs{
+                p{
+                    width: 100%;
+                }
+
+                input{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .btn{
+                    margin: auto;
+                }
             }
         }
     }
@@ -1257,5 +1317,9 @@
 
     .vacancies{
         padding-top: 20px;
+    }
+
+    .bread-crumbs{
+        margin-top: 0;
     }
 }
