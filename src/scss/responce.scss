@@ -208,7 +208,7 @@
             display: block;
             height: 25px;
             width: 25px;
-            margin-left: 10px;
+            
         }
     
         .btn__menu:before, .btn__menu:after, .btn__menu span
@@ -219,6 +219,7 @@
             left: 0;
             right: 0;
             margin: auto; 
+            transform:none;
         }
     
         .btn__menu span
@@ -235,14 +236,14 @@
         {
             content: "";
             width: 100%;
-            top: 9px;
+            top: 3px;
         }
     
         .btn__menu:after
         {
             content: "";
             width: 100%;
-            bottom: 8px;
+            bottom: 2px;
         }
     }
 
