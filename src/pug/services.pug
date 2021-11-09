@@ -1,6 +1,5 @@
 mixin Card(title, imgPath, link, extensionClass)
-    .card-services(class= extensionClass)
-        img(src= imgPath, alt="")
+    .card-services(class= extensionClass, style=`background-image: url(${imgPath});`)
         h2= title 
         a(href= link).btn Подробнее
 
@@ -11,8 +10,7 @@ section.services
         +Card("Разблокировка", "../assets/images/Unlock.png", "#", "unlock")
         +Card("Замена уплотнителя", "../assets/images/ReplacementOfTheSeal.png", "#", "replacement")
         +Card("Остекление балконов", "../assets/images/GlazingOfBalconies.png", "#", "glazing")
-        .card-services.nds
-            img(src= "../assets/images/NDS.png", alt="")
+        .card-services.nds(style="background-image: url(../assets/images/NDS.png)")
             p.light С нами комфортно
             h2 ВОЗВРАЩАЕМ НДС
             p со всей суммы ремонта 

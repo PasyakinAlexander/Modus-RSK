@@ -284,16 +284,18 @@ header{
         .card-services{
             position: relative;
             margin-top: 25px;
-
-            img{
-                top: 0;
-            }
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 50px;
+            border-radius: 10px;
 
             h2{
-                position: absolute;
-                top: 50px;
                 margin: 0;
-                left: 50px;
                 font-size: 34px;
                 color: #231f20;
                 font-family: Intro;
@@ -302,42 +304,52 @@ header{
 
             .btn{
                 margin: 0;
-                position: absolute;
-                bottom: 50px;
-                left: 50px;
+                width: fit-content;
             }
         }
 
+        .window-adjustment{
+            width: 44%;
+        }
+
         .unlock{
-            width: 55%;
+            width: 54%;
         }
 
         .replacement{
-            width: 40%;
+            width: 39%;
 
             h2{
                 width: 200px;
             }
         }
 
+        .glazing{
+            width: 59%;
+        }
+
         .repair{
-            width: 55%;
+            width: 54%;
         }
 
         .installation{
-            width: 40%;
+            width: 44%;
+        }
+
+        .installing-handles{
+            width: 100%;
         }
 
         .glass-installation{
-            width: 40%;
+            width: 44%;
         }
 
         .glass-replacement{
-            width: 55%;
+            width: 54%;
         }
 
         .locks, .profile, .tides{
-            width: 30%;
+            width: 32%;
 
             h2{
                 width: 200px;
@@ -348,26 +360,27 @@ header{
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
+            padding: 20px;
 
             .light{
                 font-weight: normal;
                 font-size: 32px;
-                top: 20px;
+                margin: 0;
             }
 
             p{
-                position: absolute;
                 font-size: 33px;
                 font-weight: 800;
                 color: #231f20;
-                top: 110px;
+                margin: 0;
             }
 
             h2{
                 left: auto;
                 font-size: 43px;
-                top: 95px;
                 font-weight: 800;
+                margin: 0;
             }
 
             .btn{
@@ -1233,6 +1246,7 @@ footer{
 
         .container{
             height: auto;
+            flex-direction: row;
         }
     }
 
@@ -1255,10 +1269,20 @@ footer{
             color: black;
             border: 2px solid black;
             font-size: 20px;
-            padding: 2px 20px;
+            padding: 2px 10px;
             font-weight: 500;
             width: 100px;
             transition: 0.5s;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button:first-child{
+            border-right: none;
+        }
+
+        button:last-child{
+            border-left: none;
         }
 
         .active{
@@ -1334,6 +1358,10 @@ footer{
 
     .statistics{
         margin-top: 0;
+
+        .container{
+            flex-direction: row;
+        }
     }
 
     .container{
@@ -1575,7 +1603,7 @@ footer{
 }
 
 .vacancies{
-    padding-top: 200px;
+    padding-top: 120px;
     background: #3a3330;
     color: white;
 
@@ -1663,20 +1691,29 @@ footer{
 }
 
 .bread-crumbs{
+    margin: 0;
     margin-top: 50px;
 
-    p{
+    li{
+        display: inline;
+
         font-size: 13px;
         color: white;
         margin: 0;
+    }
 
-        span{
-            color: #ac8e74;
-        }
+    .active{
+        color: #ac8e74;
+    }
+
+    span{
+        font-size: 13px;
+        color: white;
+        margin: 0;
     }
 }
 
-.iformation-bread-crumbs{
+.information-bread-crumbs{
     padding-top: 150px;
     background: #3a3330;
 }

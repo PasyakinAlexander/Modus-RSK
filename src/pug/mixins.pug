@@ -32,7 +32,10 @@ mixin PhotoWorkCard(imgPath, title, descr)
             p= descr
             .btn Подробнее
 
-mixin BreadCrumbs(page)
-    .bread-crumbs 
-        p Главная - 
-            span= page
+mixin BreadCrumbs(page, link)
+    ul#breadscrumb.bread-crumbs 
+        li 
+            a(href="/") Главная 
+        span.separator - 
+        li.active
+            a(href="#")= page

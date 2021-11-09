@@ -206,12 +206,8 @@
 
         .btn__menu{
             display: block;
-            height: 50px;
+            height: 55px;
             width: 50px;
-            margin-right: auto;
-            position: absolute;
-            top: 20px;
-            left: 10px;
         }
     
         .btn__menu:before, .btn__menu:after, .btn__menu span
@@ -231,7 +227,7 @@
         {
             content: "";
             width: 50%;
-            top: 20px;
+            top: 25px;
         }
     
         .btn__menu:after
@@ -246,7 +242,7 @@
         top: 0;
         left: -350px;
         width: 350px;
-        background-color: rgba($color: #362f2c, $alpha: 0.9);
+        background-color: rgba($color: #362f2c, $alpha: 0.95);
         transition: 0.5s;
         padding-bottom: 50px;
 
@@ -312,6 +308,9 @@
         .container{
             .card-services{
                 width: 100%;
+                padding: 10px;
+                align-items: center;
+                justify-content: space-around;
                 
                 h2{
                     font-size: 42px;
@@ -476,9 +475,18 @@
     }
 
     .vacancies{
+        padding-top:100px;
         .btn__tab__switch{
             width: 100%;
         }
+    }
+
+    .information-bread-crumbs{
+        padding-top: 100px;
+    }
+
+    .contacts-section{
+        padding-top: 100px;
     }
 }
 
@@ -491,7 +499,7 @@
 
     header{
         .logo{
-            width: 50px;
+            width: 40px;
             overflow: hidden;
             display: block;
         }
@@ -742,7 +750,7 @@
     }
 
     .adjustment-title{
-        height: 400px;
+        height: 450px;
 
         .title{
             width: 100%;
@@ -806,7 +814,7 @@
     }
 
     .bread-crumbs{
-        margin-top: 0;
+        margin-top: 30px;
 
         p{
             margin: 0;
@@ -839,8 +847,6 @@
         }
 
         .logo{
-            margin-left: 50px;
-
             img{
                 height: 50px;
             }
@@ -850,10 +856,6 @@
             width: 50%;
             font-size: 10px;
         }
-
-        .btn__menu{
-            top: 10px;
-        }
     }
 
     .nav{
@@ -861,10 +863,16 @@
         left: -100%;
         height: 100%;
 
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         .work-schedule{
-            position: absolute;
-            bottom: 30px;
-            left: 50px;
+            span{
+                font-size: 16px;
+            }
         }
     }
 
@@ -1185,7 +1193,7 @@
                 }
 
                 .map-block{
-                    height: 150px;
+                    height: 250px;
                 }
             }
         }
@@ -1320,6 +1328,11 @@
     }
 
     .bread-crumbs{
-        margin-top: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .information-bread-crumbs{
+        padding: 20px;
     }
 }
